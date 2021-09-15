@@ -12,3 +12,41 @@ const Home = () => {
    ...state.countries,
    loading: state.loadingBar.default,
  }));
+
+ useEffect(() => {
+  if (!list.length) {
+    dispatch(fetchCountries(continent));
+  }
+}, []);
+
+if (loading) {
+  return <h1>Loading...</h1>;
+}
+
+return (
+  <section>
+    <h1>
+      {continent}
+      {' '}
+      -
+      {' '}
+      {total}
+    </h1>
+    <ul>
+      {list.map(({ country, confirmed }) => (
+        <li key={country}>
+          <Link to={`/country/${country}`}>
+            {country}
+            {' '}
+            -
+            {' '}
+            {confirmed}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </section>
+);
+};
+
+export default Home;
