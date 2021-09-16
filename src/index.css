@@ -3,19 +3,14 @@
 
 @font-face {
   font-family: GillSans;
-  src: url(./assets/GillSans.otf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: GillSansBold;
-  src: url(./assets/GillSansBold.otf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: GillSansMedium;
-  src: url(./assets/GillSansMedium.otf);
   font-weight: bolder;
 }
 

@@ -5,7 +5,6 @@ import { fetchCountries } from '../../redux/countries';
 import Icon from '../Icon';
 import formatNumber from '../../utils/formatNumber';
 import './Home.css';
-import virus from '../../assets/virus.svg';
 import map from '../../assets/europe.png';
 
 const Grid = ({ items = [] }) => (
