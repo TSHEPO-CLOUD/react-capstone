@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { fetchCountry } from '../../redux/countries';
+import formatNumber from '../../utils/formatNumber';
+import Icon from '../Icon';
+import image from '../../assets/virus.svg';
+import './Details.css';
 
 const Details = () => {
   const { name } = useParams();
@@ -20,6 +24,7 @@ const Details = () => {
   }
 
   const { All } = country;
+  const list = Object.entries(country).slice(1);
 
   return (
     <div>
