@@ -12,6 +12,9 @@ This application displays Covid-19 information from different data sources.
 
 - React & Redux
 
+## Live Demo
+
+[Live Demo Link](https://happy-stonebraker-4b4556.netlify.app/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
