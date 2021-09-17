@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { loadingBarReducer } from 'react-redux-loading-bar';
 import thunk from 'redux-thunk';
-import countriesReducer from './redux/countries';
+import countriesReducer from './redux/countries/countries';
 
 const reducer = combineReducers({
   countries: countriesReducer,

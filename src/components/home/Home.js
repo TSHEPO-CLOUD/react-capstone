@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchCountries } from '../../redux/countries';
+import { fetchCountries } from '../../redux/countries/countries';
 import Icon from '../Icon';
 import formatNumber from '../../utils/formatNumber';
 import './Home.css';

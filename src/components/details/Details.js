@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-import { fetchCountry } from '../../redux/countries';
+import { fetchCountry } from '../../redux/countries/countries';
 import formatNumber from '../../utils/formatNumber';
 import Icon from '../Icon';
 import image from '../../assets/virus.svg';
@@ -20,7 +20,7 @@ const Details = () => {
   }, []);
 
   if (loading || !country) {
-    return <h1>Loading...</h1>;
+    return null;
   }
 
   const { All } = country;
